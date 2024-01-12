@@ -29,6 +29,7 @@ function member1(memberNumber) {
   }
 
   console.log(member);
+  console.log(`Total memebers which gor genrated random: ${member.books.length}`);
   return member;
 
 }
@@ -46,12 +47,18 @@ function averagedays(members) {
 
       totaldays += returndate - checkoutdate;
       totalbooks++;
+
+      const averageday = totaldays / totalbooks;
+
+
+      console.log(`Average days: ${averageday}`);
     }
+
+
   }
 
 
-  const averageday = totaldays / totalbooks;
-  console.log(`Average days: ${averageday}`);
+
 
 }
 

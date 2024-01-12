@@ -1,0 +1,1 @@
+const averageday = totaldays / totalbooks;
